@@ -8,10 +8,30 @@
  */
 ?>
 
+
 <?php
+
+if ( ! defined( 'ASTRO_DIR_PATH' ) ) {
+	define( 'ASTRO_DIR_PATH', untrailingslashit( get_template_directory() ) );
+}
 
 define( 'ASTRO_THEME_DIR', get_template_directory() );
 define( 'ASTRO_THEME_URI', get_template_directory_uri() );
+
+// echo '<pre>';
+// print_r( ASTRO_DIR_PATH );
+// wp_die();
+
+require_once ASTRO_DIR_PATH . '/inc/helpers/autoloader.php';
+
+function astro_get_theme_instance() {
+	\ASTRO_THEME\Inc\ASTRO_THEME::get_instance();
+}
+astro_get_theme_instance();
+
+
+
+
 
 if ( ! function_exists( 'astro_setup' ) ):
     function astro_setup() {
