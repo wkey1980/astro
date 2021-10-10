@@ -1,0 +1,14 @@
+
+root = true
+
+[*]
+indent_style = tab
+indent_size = 4
+
+[*.html]
+indent_style = tab
+indent_size = 4
+
+[*.php]
+indent_style = tab
+indent_size = 4
