@@ -14,12 +14,16 @@
 if ( ! defined( 'ASTRO_DIR_PATH' ) ) {
 	define( 'ASTRO_DIR_PATH', untrailingslashit( get_template_directory() ) );
 }
+if ( ! defined( 'ASTRO_DIR_URI' ) ) {
+	define( 'ASTRO_DIR_URI', untrailingslashit( get_template_directory_uri() ) );
+}
+
 
 define( 'ASTRO_THEME_DIR', get_template_directory() );
 define( 'ASTRO_THEME_URI', get_template_directory_uri() );
 
 // echo '<pre>';
-// print_r( ASTRO_DIR_PATH );
+// print_r(  );
 // wp_die();
 
 require_once ASTRO_DIR_PATH . '/inc/helpers/autoloader.php';
@@ -126,12 +130,12 @@ add_action( 'after_setup_theme', 'astro_content_width', 0 );
 require ASTRO_THEME_DIR . '/inc/google-fonts/google-fonts.php';
 
 // Enqueue Styles
-require ASTRO_THEME_DIR . '/inc/enqueue/enqueue-bootstrap-styles.php';
-require ASTRO_THEME_DIR . '/inc/enqueue/enqueue-styles.php';
+// require ASTRO_THEME_DIR . '/inc/enqueue/enqueue-bootstrap-styles.php';
+// require ASTRO_THEME_DIR . '/inc/enqueue/enqueue-styles.php';
 
 // Enqueue Scripts
-require ASTRO_THEME_DIR . '/inc/enqueue/enqueue-bootstrap-scripts.php';
-require ASTRO_THEME_DIR . '/inc/enqueue/enqueue-scripts.php';
+// require ASTRO_THEME_DIR . '/inc/enqueue/enqueue-bootstrap-scripts.php';
+// require ASTRO_THEME_DIR . '/inc/enqueue/enqueue-scripts.php';
 
 // Register Menus
 require ASTRO_THEME_DIR . '/inc/menus/menus.php';

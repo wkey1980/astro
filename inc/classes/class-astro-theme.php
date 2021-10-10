@@ -21,10 +21,14 @@ class ASTRO_THEME {
 		// wp_die( 'Hello World!' );
 
 		// Load Classes
+		Assets::get_instance();
+
 		$this->setup_hooks();
 	}
 
 	protected function setup_hooks() {
 		// Actions & Filters
+
+
 	}
 }
