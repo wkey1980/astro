@@ -22,6 +22,7 @@ class ASTRO_THEME {
 
 		// Load Classes
 		Assets::get_instance();
+		Menus::get_instance();
 
 		$this->setup_hooks();
 	}

@@ -138,7 +138,7 @@ require ASTRO_THEME_DIR . '/inc/google-fonts/google-fonts.php';
 // require ASTRO_THEME_DIR . '/inc/enqueue/enqueue-scripts.php';
 
 // Register Menus
-require ASTRO_THEME_DIR . '/inc/menus/menus.php';
+// require ASTRO_THEME_DIR . '/inc/menus/menus.php';
 
 // Register Widgets areas
-require ASTRO_THEME_DIR . '/inc/widgets/widgets.php';
+// require ASTRO_THEME_DIR . '/inc/widgets/widgets.php';
