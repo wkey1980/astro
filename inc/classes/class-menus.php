@@ -33,13 +33,17 @@ class Menus {
 	public function register_menus() {
 		register_nav_menus([
 			'astro_header_menu' => esc_html__( 'Header Menu', 'astro' ),
-            'astro_footer_menu' => esc_html__( 'Footer Menu', 'astro' ),
-            'astro_mobile_menu' => esc_html__( 'Mobile Menu', 'astro' ),
-            'astro_social_menu' => esc_html__( 'Social Menu', 'astro' )
+            'astro_footer_menu' => esc_html__( 'Footer Menu', 'astro' )
 		]);
 	}
 
 	public function get_menu_id( $location ) {
-	
+		// Get all Locations
+		$locations = get_nav_menu_locations();
+
+		// Get object id by location
+		$menu_id = $locations[$location];
+
+		return ! empty( $menu_id ) ? $menu_id : '';
 	}
 }

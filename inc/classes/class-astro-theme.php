@@ -18,8 +18,6 @@ class ASTRO_THEME {
 
 	protected function __construct() {
 
-		// wp_die( 'Hello World!' );
-
 		// Load Classes
 		Assets::get_instance();
 		Menus::get_instance();

@@ -18,8 +18,6 @@ class Assets {
 
 	protected function __construct() {
 
-		// wp_die( 'Hello World!' );
-
 		// Load Classes
 		$this->setup_hooks();
 	}
