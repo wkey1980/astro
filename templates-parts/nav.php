@@ -8,7 +8,7 @@
  */
 ?>
 
-<!-- VID 23 -->
+<!-- VID 24 -->
 		<?php
 
 		$menu_class = \ASTRO_THEME\Inc\Menus::get_instance();
